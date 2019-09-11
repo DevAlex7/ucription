@@ -8,10 +8,10 @@ class Database
 
     private function connect()
     {
-        $server = '34.70.125.18' ; 
+        $server = 'localhost'; 
         $database = 'ucription';
-        $username = 'alexgve7';
-        $password = 'Recuperacion_2019App';
+        $username = 'root';
+        $password = '';
         try {
             @self::$connection = new PDO('mysql:host='.$server.'; dbname='.$database.'; charset=utf8', $username, $password);
         } catch(PDOException $error) {
