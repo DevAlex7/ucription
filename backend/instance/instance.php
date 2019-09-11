@@ -8,10 +8,10 @@ class Database
 
     private function connect()
     {
-        $server = $_ENV['server']; 
-        $database = $_ENV['database'];
-        $username = $_ENV['username'];
-        $password = $_ENV['password'];
+        $server = '34.70.125.18' ; 
+        $database = 'ucription';
+        $username = 'alexgve7';
+        $password = 'Recuperacion_2019App';
         try {
             @self::$connection = new PDO('mysql:host='.$server.'; dbname='.$database.'; charset=utf8', $username, $password);
         } catch(PDOException $error) {
