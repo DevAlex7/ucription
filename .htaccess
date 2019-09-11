@@ -1,1 +1,5 @@
+RewriteEngine On
+Options -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?page=$1&url=$2&item=$3 [L,QSA]
 
