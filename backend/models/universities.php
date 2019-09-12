@@ -6,7 +6,7 @@ class University extends Validator{
     private $university;
 
     public function id($value){
-        if($this->ValidateInt($value)){
+        if($this->validateId($value)){
             $this->id = $value;
             return true;
         }   

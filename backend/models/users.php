@@ -1,7 +1,13 @@
 <?php 
     class Users{
-        public function hi(){
-            print 'd';
+        private $id;
+        private $name;
+        private $email;
+        private $password;
+        private $role_id;
+
+        private function id($value){
+            
         }
     }
 ?>

@@ -11,8 +11,14 @@
             case 'university':
                 include 'api/university.php';        
             break;
+            case 'subjects':
+                include 'api/subject_matter.php';
+            break;
+            case 'files':
+                include 'api/files.php';
+            break;
             default:
-                exit('protocolo incorrecto');   
+                exit('Ruta erronea');   
         }
     }
     else{
